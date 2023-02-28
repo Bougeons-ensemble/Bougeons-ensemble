@@ -18,7 +18,7 @@
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.Inline Fold3.6",
+    "styled-components": "^5.3.6",
     "tailwindcss": "^3.2.7",
     "twin.macro": "^3.1.0"
   },
@@ -26,8 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && netlify deploy --prod --dir=build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app",
