@@ -6,7 +6,6 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
-import { Link } from "react-router-dom";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
@@ -76,11 +75,12 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-              <Link href={primaryButtonUrl}>
-            <PrimaryButton buttonRounded={buttonRounded} >
+              
+            <PrimaryButton  as="a" href={primaryButtonUrl} buttonRounded={buttonRounded} >
+          
               {primaryButtonText}
             </PrimaryButton>
-              </Link>
+              
           </TextContent>
         </TextColumn>
       </TwoColumn>
