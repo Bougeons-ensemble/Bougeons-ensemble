@@ -19,7 +19,7 @@ import customerSupportIllustrationSrc from "images/customer-support-illustration
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    <MainFeature />
+    <MainFeature id="experiences" />
     <Features />
     <MainFeature2 />
     <Portfolio />
@@ -40,7 +40,7 @@ export default () => (
           quote:
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Charlotte Hale",
-          customerTitle: "CEO, Tesla Inc."
+          customerTitle: "CEO, Tesla Inc.",
         },
         {
           imageSrc:
@@ -50,8 +50,8 @@ export default () => (
           quote:
             "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Adam Cuppy",
-          customerTitle: "Founder, Nestle"
-        }
+          customerTitle: "Founder, Nestle",
+        },
       ]}
       textOnLeft={true}
     />

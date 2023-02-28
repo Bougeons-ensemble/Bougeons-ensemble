@@ -2,7 +2,6 @@ import React from "react";
 import GlobalStyles from "styles/GlobalStyles";
 import { css } from "styled-components/macro"; //eslint-disable-
 
-
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
  * the prebuilt landing page components by uncommenting their import and export lines respectively.
@@ -109,6 +108,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "pages/ContactUs";
 import AboutUs from "pages/AboutUs";
 import BlogIndex from "pages/BlogIndex";
+import NotFoundPage from "pages/NotFoundPage";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -119,22 +119,11 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          <Route
-            path="/components/:type/:subtype/:name"
-            element={<ComponentRenderer />}
-          />
-          <Route path="/contactus" element={<ContactUs/>}>
-          </Route>
-          <Route path="/aProposDeNous" element={<AboutUs/>}>
-          </Route>
-          <Route path="/evenements" element={<BlogIndex/>}>
-          </Route>
-          <Route
-            path="/components/:type/:name"
-            element={<ComponentRenderer />}
-          />
-          <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<MainLandingPage />} />
+          <Route path="/contactNous" element={<ContactUs />}></Route>
+          <Route path="/aProposDeNous" element={<AboutUs />}></Route>
+          <Route path="/activities" element={<BlogIndex />}></Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </>

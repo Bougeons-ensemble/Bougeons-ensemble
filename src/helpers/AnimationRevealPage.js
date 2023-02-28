@@ -17,7 +17,10 @@ function AnimationReveal({ disabled, children }) {
   const directions = ["left", "right"];
   const childrenWithAnimation = children.map((child, i) => {
     return (
-      <AnimatedSlideInComponent key={i} direction={directions[i % directions.length]}>
+      <AnimatedSlideInComponent
+        key={i}
+        direction={directions[i % directions.length]}
+      >
         {child}
       </AnimatedSlideInComponent>
     );
@@ -25,8 +28,12 @@ function AnimationReveal({ disabled, children }) {
   return <>{childrenWithAnimation}</>;
 }
 
-function AnimatedSlideInComponent({ direction = "left", offset = 30, children }) {
-  const [ref, inView] = useInView({ margin: `-${offset}px 0px 0px 0px`});
+function AnimatedSlideInComponent({
+  direction = "left",
+  offset = 30,
+  children,
+}) {
+  const [ref, inView] = useInView({ margin: `-${offset}px 0px 0px 0px` });
 
   const x = { target: "0%" };
 
@@ -37,11 +44,11 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
     <div ref={ref}>
       <motion.section
         initial={{ x: x.initial }}
-        animate={{ 
+        animate={{
           x: inView && x.target,
-          transitionEnd:{
-            x: inView && 0
-          }
+          transitionEnd: {
+            x: inView && 0,
+          },
         }}
         transition={{ type: "spring", damping: 19 }}
       >
@@ -51,7 +58,7 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
   );
 }
 
-export default props => (
+export default (props) => (
   <StyledDiv className="App">
     <AnimationReveal {...props} />
   </StyledDiv>
