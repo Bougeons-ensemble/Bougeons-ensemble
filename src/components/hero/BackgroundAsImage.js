@@ -2,6 +2,10 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import heroImage from '../../images/hero.jfif';
+import ContactUS from 'pages/ContactUs'
+import { BrowserRouter } from "react-router-dom";
+import {Routes,Route } from "react-router-dom";
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
@@ -17,7 +21,7 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
+  background-image: url("${heroImage}");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
@@ -59,24 +63,22 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">
-        About
+        
       </NavLink>
-      <NavLink href="#">
-        Blog
+      <NavLink href="/aProposDeNous">
+      
+      À propos de nous
       </NavLink>
-      <NavLink href="#">
-        Locations
+      <NavLink href="/evenements">
+      Activités
       </NavLink>
-      <NavLink href="#">
-        Pricing
+      <NavLink href="/contactus">
+        contact nous
       </NavLink>
     </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
+  
   ];
+
 
   return (
     <Container>
@@ -85,13 +87,13 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>Nous avons maintenant lancé des opérations à Tange.</Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>le meilleur club</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <SlantedBackground>Bougeons Ensemble.</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <PrimaryAction>En savoir plus sur nous</PrimaryAction>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed
@@ -101,6 +103,7 @@ export default () => {
           </RightColumn>
         </TwoColumn>
       </HeroContainer>
+    
     </Container>
   );
 };
