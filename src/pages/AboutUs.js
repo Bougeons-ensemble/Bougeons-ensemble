@@ -22,13 +22,16 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>A propos de Bougeons ensemble</Subheading>}
+        heading="nous sommes non lucratif club "
         buttonRounded={false}
-        primaryButtonText="See Portfolio"
+        primaryButtonText="See more"
+        primaryButtonUrl = "#ourvirsion"
+        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
+        id="ourvision"
         subheading={<Subheading>Our Vision</Subheading>}
         heading="We aim to disrupt the design space."
         buttonRounded={false}
@@ -39,7 +42,7 @@ export default () => {
       <Features
         subheading={<Subheading>Our Values</Subheading>}
         heading="We follow these."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
         cards={[
           {
             imageSrc: SupportIconImage,

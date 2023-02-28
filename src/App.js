@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyles from "styles/GlobalStyles";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import { css } from "styled-components/macro"; //eslint-disable-
+
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -105,6 +106,9 @@ import MainLandingPage from "./demos/AgencyLandingPage";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactUs from "pages/ContactUs";
+import AboutUs from "pages/AboutUs";
+import BlogIndex from "pages/BlogIndex";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -119,6 +123,12 @@ export default function App() {
             path="/components/:type/:subtype/:name"
             element={<ComponentRenderer />}
           />
+          <Route path="/contactus" element={<ContactUs/>}>
+          </Route>
+          <Route path="/aProposDeNous" element={<AboutUs/>}>
+          </Route>
+          <Route path="/evenements" element={<BlogIndex/>}>
+          </Route>
           <Route
             path="/components/:type/:name"
             element={<ComponentRenderer />}
