@@ -22,24 +22,30 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>A propos de Bougeons ensemble</Subheading>}
+        heading="nous sommes non lucratif club "
         buttonRounded={false}
-        primaryButtonText="See Portfolio"
+        primaryButtonText="plus de details "
+        primaryButtonUrl = "#ourvision"
+        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-      />
+        />
       <MainFeature1
-        subheading={<Subheading>Our Vision</Subheading>}
-        heading="We aim to disrupt the design space."
+        id="ourvision"
+        subheading={<Subheading>Notre vision</Subheading>}
+        description="La vision du Club Bougeons Ensemble à Tanger est de créer une communauté d'individus partageant les mêmes idées et passionnés par l'idée d'avoir un impact positif dans leur région. Grâce à la collaboration, l'innovation et l'engagement actif, nous visons à construire un réseau dynamique qui permet aux membres de contribuer au développement de Tanger et de ses habitants. Notre vision est de devenir une force motrice de changement positif, en promouvant la responsabilité sociale, le développement durable et l'inclusivité. Nous croyons qu'en travaillant ensemble, nous pouvons créer un avenir meilleur pour tous et inspirer les autres à nous rejoindre dans notre mission.
+        "
+        heading="Notre objectif est de perturber l'espace de conception."
         buttonRounded={false}
-        primaryButtonText="Contact Us"
+        primaryButtonText="Contact nous"
         imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
+        primaryButtonUrl = "/contactus"
       />
       <Features
         subheading={<Subheading>Our Values</Subheading>}
         heading="We follow these."
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
         cards={[
           {
             imageSrc: SupportIconImage,

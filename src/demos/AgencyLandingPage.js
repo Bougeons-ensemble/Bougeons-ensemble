@@ -11,6 +11,7 @@ import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
+
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
@@ -18,7 +19,7 @@ import customerSupportIllustrationSrc from "images/customer-support-illustration
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    <MainFeature />
+    <MainFeature id="experiences" />
     <Features />
     <MainFeature2 />
     <Portfolio />
@@ -39,7 +40,7 @@ export default () => (
           quote:
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Charlotte Hale",
-          customerTitle: "CEO, Tesla Inc."
+          customerTitle: "CEO, Tesla Inc.",
         },
         {
           imageSrc:
@@ -49,8 +50,8 @@ export default () => (
           quote:
             "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Adam Cuppy",
-          customerTitle: "Founder, Nestle"
-        }
+          customerTitle: "Founder, Nestle",
+        },
       ]}
       textOnLeft={true}
     />
@@ -66,6 +67,7 @@ export default () => (
       }
     />
     <Blog />
+    {/* <contactUs /> */}
     <ContactUsForm />
     <Footer />
   </AnimationRevealPage>
