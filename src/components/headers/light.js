@@ -90,10 +90,10 @@ export default ({
   );
   const defaultLink = [
     <NavLinks key={1}>
-      <NavLink to="/"></NavLink>
+      <NavLink to="/">Accueil </NavLink>
       <NavLink to="/aProposDeNous">À propos de nous</NavLink>
       <NavLink to="/activities">Les activités</NavLink>
-      <NavLink to="/contactNous">contact nous</NavLink>
+      <NavLink to="/contactNous">Contact nous</NavLink>
     </NavLinks>,
   ];
   logoLink = logoLink || defaultLogoLink;
