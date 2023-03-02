@@ -3,7 +3,6 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 // import heroImage from "../../images/hero.jfif";
-
 import Header, {
   NavLink,
   LogoLink,
@@ -83,10 +82,14 @@ export default (navLinks) => {
             </AnchorElement>
           </LeftColumn>
           <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+            {/* <StyledResponsiveVideoEmbed
+              url="https://dms.licdn.com/playlist/D4E05AQFy10KhCEHH2A/mp4-720p-30fp-crf28/0/1676749491442?e=1678309200&v=beta&t=AsXcOJR28zd7hEybhFGfFBOJAkknHLAjx_8qNTs2rUA"
               background="transparent"
-            />
+            /> */}
+            <StyledResponsiveVideoEmbed
+              poster="https://media.licdn.com/dms/image/C4E05AQHzqpMAr0uTmw/feedshare-thumbnail_720_1280/0/1676414134377?e=1678309200&amp;v=beta&amp;t=Aia5UaWRLXUtJrdD2aWNxLcrb02-3UrGYZuJ8kHTQEE"
+              url="https://dms.licdn.com/playlist/C4E05AQHzqpMAr0uTmw/mp4-720p-30fp-crf28/0/1676416732464?e=1678309200&amp;v=beta&amp;t=gzqGLb8IQJgfvnsYM_y9KBi-qOpWg90X21g4KfkeHO0"
+            ></StyledResponsiveVideoEmbed>
           </RightColumn>
         </TwoColumn>
       </HeroContainer>
