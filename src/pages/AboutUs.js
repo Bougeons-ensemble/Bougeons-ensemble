@@ -11,10 +11,11 @@ import MainFeature1 from "components/features/TwoColWithButton.js";
 import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
+import { GoFileMedia as SupportIconImage } from "react-icons/go";
+import {IoLogoDesignernews as ShieldIconImage } from "react-icons/io";
+import { AiOutlineComment as CustomerLoveIconImage } from "react-icons/ai";
+import { GiTakeMyMoney as financeImage } from "react-icons/gi";
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
@@ -43,30 +44,36 @@ export default () => {
         primaryButtonUrl = "/contactus"
       />
       <Features
-        subheading={<Subheading>Our Values</Subheading>}
-        heading="We follow these."
-        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
+        subheading={<Subheading>Notre celules </Subheading>}
+        heading="les cellules ."
+        description="Bougeons ensemble est un club compose de 4 cellules "
+        iconFill="#f6303f"
         cards={[
           {
             imageSrc: SupportIconImage,
-            title: "24/7 Support",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "cellule media",
+            description: "est responsable de la création de contenu qui informe les gens sur le travail que le club réalise et sensibilise aux enjeux sociaux importants.",
           },
           {
             imageSrc: ShieldIconImage,
-            title: "Strong Teams",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "cellule design",
+            description: "est responsable de développer des solutions créatives aux problèmes, comme la conception de logos ou la création de supports visuels pour les projets du club"
           },
           {
             imageSrc: CustomerLoveIconImage,
-            title: "Customer Satisfaction",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            title: "cellule communication ",
+            description: "est responsable de la coordination de toutes les communications du club, y compris la gestion des relations avec les médias."
           },
-        ]}
+          {
+            imageSrc: financeImage,
+            title: "cellule finance",
+            description: "est chargée de collecter des fonds pour soutenir les activités du club et de gérer ses finances de manière responsable"
+        }
+      ]}
         linkText=""
       />
       <TeamCardGrid 
-        subheading={<Subheading>Our Team</Subheading>}
+        subheading={<Subheading>Notre équipe</Subheading>}
       />
       <Footer />
     </AnimationRevealPage>

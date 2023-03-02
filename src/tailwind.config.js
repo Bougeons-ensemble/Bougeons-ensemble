@@ -10,8 +10,12 @@ module.exports = {
       xl: '1280px',
       "2xl": "1440px",
     },
+    icons:{
+      primaryClr :{100:'#f6303f',
+    },
+    },
     colors: {
-      transparent: 'transparent',
+      transparent: '#fdd6d9',
 
       black: '#000',
       white: '#fff',
