@@ -4,10 +4,14 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
-import LogoImage from "images/logo.svg";
-import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import LogoImage from "images/logo.png";
+import { AiFillFacebook as FacebookIcon} from "react-icons/ai";
+import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
+import { AiFillLinkedin as LinkdinIcon} from "react-icons/ai";
+import { FaTiktok as TiktokIcon } from "react-icons/fa";
+// import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
+// import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
+// import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 
 const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
@@ -19,14 +23,14 @@ const ColumnHeading = tw.h5`uppercase font-bold`;
 
 const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
+const Link = tw.a`hover:border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
 
 const SubscribeNewsletterColumn = tw(Column)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
 const SubscribeNewsletterContainer = tw.div`max-w-sm mx-auto lg:mx-0 `;
 const SubscribeText = tw.p`mt-2 lg:mt-6 text-sm font-medium text-gray-600`;
 const SubscribeForm = tw.form`mt-4 lg:mt-6 text-sm sm:flex max-w-xs sm:max-w-none mx-auto sm:mx-0`;
 const Input = tw.input`bg-gray-300 px-6 py-3 rounded sm:rounded-r-none border-2 sm:border-r-0 border-gray-400 hover:border-primary-500 focus:outline-none transition duration-300 w-full`;
-const SubscribeButton = tw(PrimaryButtonBase)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3`;
+const SubscribeButton = tw(PrimaryButtonBase)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3  bg-primary-600`;
 
 const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 
@@ -52,7 +56,7 @@ export default () => {
       <Content>
         <SixColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
+            <ColumnHeading>Accueil </ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Blog</Link>
@@ -69,24 +73,24 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
+            <ColumnHeading>À propos de nous</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Log In</Link>
+                <Link href="#">A propos de Be </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
+                <Link href="#">Notre vision</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Business</Link>
+                <Link href="#">Notre cellules </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Team</Link>
+                <Link href="#">Notre equipe</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Press</ColumnHeading>
+            <ColumnHeading>Les activités</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Logos</Link>
@@ -103,7 +107,7 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Legal</ColumnHeading>
+            <ColumnHeading>Contact nous</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">GDPR</Link>
@@ -121,13 +125,13 @@ export default () => {
           </Column>
           <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
-              <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
+              <ColumnHeading> ABONNEZ-VOUS À NOTRE NEWSLETTER</ColumnHeading>
               <SubscribeText>
-                We deliver high quality blog posts written by professionals weekly. And we promise no spam.
+              Nous livrons des articles de blog de haute qualité rédigés par notre professionnelle équipe de contenu 
               </SubscribeText>
               <SubscribeForm method="get" action="#">
-                <Input type="email" placeholder="Your Email Address" />
-                <SubscribeButton type="submit">Subscribe</SubscribeButton>
+                <Input type="email" placeholder="Votre adresse e-mail" />
+                <SubscribeButton type="submit">S'abonner</SubscribeButton>
               </SubscribeForm>
             </SubscribeNewsletterContainer>
           </SubscribeNewsletterColumn>
@@ -136,18 +140,21 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>Bougeons ensemble.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2018 Be create by S.I . All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+              <TiktokIcon  />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://www.linkedin.com/in/bougeons-ensemble-505370255/">
+              <LinkdinIcon />
+            </SocialLink>
+            <SocialLink href="https://instagram.com/bougeons_ensemble?igshid=OTJlNzQ0NWM=">
+              <Instgrameicon/>
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>
