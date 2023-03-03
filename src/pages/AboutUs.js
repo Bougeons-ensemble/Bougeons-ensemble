@@ -28,14 +28,35 @@ export default () => {
         buttonRounded={false}
         primaryButtonText="plus de details "
         primaryButtonUrl = "#ourvision"
-        description="Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin #TeamBe"
+        description="Bougeons Ensemble est un club humanitaire universitaire,
+        fondé le 12/10/2018 par des jeunes étudiants de la Faculté
+        des Sciences et Techniques de Tanger, qui ont eu l'idée de
+        créer un nouveau concept. Ce club humanitaire et charitable
+        rassemble des personnes qui agissent pour un intérêt
+        collectif, attentif aux besoins de la société. Son objectif est
+        de soutenir l'idée de faire du bénévolat en tant que mode de
+        vie, ceci à travers des actions et des activités associatives
+        dont le but est la distribution d'un bénéfice aux personnes
+        souffrant de difficultés."
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         />
       <MainFeature1
         id="ourvision"
         subheading={<Subheading>Notre vision</Subheading>}
-        description="La vision du Club Bougeons Ensemble à Tanger est de créer une communauté d'individus partageant les mêmes idées et passionnés par l'idée d'avoir un impact positif dans leur région. Grâce à la collaboration, l'innovation et l'engagement actif, nous visons à construire un réseau dynamique qui permet aux membres de contribuer au développement de Tanger et de ses habitants. Notre vision est de devenir une force motrice de changement positif, en promouvant la responsabilité sociale, le développement durable et l'inclusivité. Nous croyons qu'en travaillant ensemble, nous pouvons créer un avenir meilleur pour tous et inspirer les autres à nous rejoindre dans notre mission.
-        "
+        description="BOUGEONS ENSEMBLE en partenariat avec FONDATION
+        SOQYA organisent une action de FORAGE D'UN PUIT en
+        faveur des habitants De la région d’ALHAOUZ, ce coin reculé
+        et méconnu au Maroc où presque 80 familles souffrent pour
+        avoir l'accès à l'eau potable , les habitants sont obligés de se
+        déplacer des kilomètres en transportant des bouteilles
+        lourdes . C’est souvent les femmes et les enfants qui sont
+        confiés à réaliser cette tâche difficile notamment avec les
+        reliefs accidentés.
+        Et comme vous le savez, la meilleure façon de remercier Dieu
+        pour une bénédiction qu’il nous a donnée est d'en donner .
+        Afin de soulager les souffrances de ces habitants nous vous
+        invitons à contribuer dans cette noble action en donnant de
+        ce que vous pouvez.  "
         heading="Notre objectif est de perturber l'espace de conception."
         buttonRounded={false}
         primaryButtonText="Contact nous"
