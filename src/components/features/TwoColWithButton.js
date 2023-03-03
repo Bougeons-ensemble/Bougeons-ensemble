@@ -15,7 +15,7 @@ const TextColumn = styled(Column)(props => [
   tw`md:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
 ]);
-
+ 
 const Image = styled.img(props => [
   props.imageRounded && tw`rounded`,
   props.imageBorder && tw`border`,
@@ -29,9 +29,7 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
-const Heading = tw(
-  SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
@@ -47,7 +45,7 @@ export default ({
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
     </>
   ),
-  description = "999999999999999 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,

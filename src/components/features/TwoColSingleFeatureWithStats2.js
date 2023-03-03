@@ -47,7 +47,7 @@ const DecoratorBlob = styled(SvgDotPattern)((props) => [
 ]);
 
 export default ({
-  subheading = "Notre palmarès",
+  subheading = "MOT DU PARRAIN",
   heading = (
     <>
      Nous avons fait cela<wbr /> depuis{" "}
