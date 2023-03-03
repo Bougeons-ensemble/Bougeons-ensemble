@@ -7,7 +7,7 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import StatsIllustrationSrc from "images/stats-illustration.svg";
+import StatsIllustrationSrc from "images/palmare.jfif";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -47,16 +47,16 @@ const DecoratorBlob = styled(SvgDotPattern)((props) => [
 ]);
 
 export default ({
-  subheading = "Our Track Record",
+  subheading = "Notre palmarès",
   heading = (
     <>
-      We have been doing this <wbr /> since{" "}
-      <span tw="text-primary-500">1999.</span>
+     Nous avons fait cela<wbr /> depuis{" "}
+      <span tw="text-primary-500">2018.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  description = "Dans le cadre des activités sociales de la faculté des sciences et techniques de Tanger (FSTT), le club Bougeons Ensemble de la faculté des sciences et techniques de Tanger vous invite à être plus solidaires, plus motivants à travers les actions qu’il organise au profit de toute personne dénuée. Notre mission dépend de votre soutien inconditionnel. Bougeons ensemble pour aider les autres. Bougeons ensemble pour sauver leurs vies. Bougeons ensemble pour tracer le sourire sur le visage des familles diminues.",
+  primaryButtonText = "plus details",
+  primaryButtonUrl = "#section3",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -71,16 +71,16 @@ export default ({
   //Change the statistics variable as you like, add or delete objects
   const defaultStatistics = [
     {
-      key: "Clients",
-      value: "2282+",
+      key: "Membres",
+      value: "80+",
     },
     {
-      key: "Projects",
-      value: "3891+",
+      key: "  Evenements",
+      value: "5+",
     },
     {
-      key: "Awards",
-      value: "1000+",
+      key: "Budget",
+      value: "100000 dh+ ",
     },
   ];
 
