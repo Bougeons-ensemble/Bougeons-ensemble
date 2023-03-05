@@ -15,10 +15,10 @@ export default ({ url, background = "black", className = "video" }) => {
     >
       <iframe
         title="Embeded Video"
-        tabindex="-1"
+        tabIndex="-1"
         preload="metadata"
         muted="muted"
-        autoplay="autoplay"
+        autoPlay="autoplay"
         style={{
           position: "absolute",
           top: 0,
