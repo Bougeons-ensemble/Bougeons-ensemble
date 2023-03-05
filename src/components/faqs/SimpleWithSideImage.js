@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { ReactComponent as PlusIcon } from "feather-icons/dist/icons/plus.svg";
 import { ReactComponent as MinusIcon } from "feather-icons/dist/icons/minus.svg";
 
@@ -13,11 +16,11 @@ const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 const TwoColumn = tw.div`flex`;
 const Column = tw.div``;
 
-const Image = styled.div(props => [
+const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
   props.imageContain ? tw`bg-contain bg-no-repeat` : tw`bg-cover`,
   props.imageShadow ? tw`shadow` : tw`shadow-none`,
-  tw`hidden lg:block rounded h-144 bg-center`
+  tw`hidden lg:block rounded h-144 bg-center`,
 ]);
 
 const FAQContent = tw.div`lg:ml-12`;
@@ -35,49 +38,22 @@ const QuestionToggleIcon = styled.span`
     ${tw`w-4 h-4`}
   }
 `;
-const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
+const Answer = motion(
+  tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`
+);
 
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our hotels from our loving customers. Should you have any other questions, feel free to reach out via the contact form below.",
+  description = null,
   imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
   imageContain = false,
   imageShadow = true,
-  faqs = null
+  faqs = null,
 }) => {
-  /*
-   * You can modify FAQs either by modifying the below defaultFaqs array or by passing a custom array of FAQs using
-   * the faqs prop
-   */
-  const defaultFaqs = [
-    {
-      question: "Is lunch provided free of cost ?",
-      answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
-    },
-    {
-      question: "Do you have 2 Bedroom suites ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    {
-      question: "Are Wi-Fi costs included in the price ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    }
-  ];
-
-  if (!faqs || faqs.length === 0) faqs = defaultFaqs;
-
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
-  const toggleQuestion = questionIndex => {
+  const toggleQuestion = (questionIndex) => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
     else setActiveQuestionIndex(questionIndex);
   };
@@ -87,7 +63,11 @@ export default ({
       <Content>
         <TwoColumn>
           <Column tw="hidden lg:block w-5/12 flex-shrink-0">
-            <Image imageContain={imageContain} imageShadow={imageShadow} imageSrc={imageSrc} />
+            <Image
+              imageContain={imageContain}
+              imageShadow={imageShadow}
+              imageSrc={imageSrc}
+            />
           </Column>
           <Column>
             <FAQContent>
@@ -106,17 +86,26 @@ export default ({
                     <Question>
                       <QuestionText>{faq.question}</QuestionText>
                       <QuestionToggleIcon>
-                        {activeQuestionIndex === index ? <MinusIcon /> : <PlusIcon />}
+                        {activeQuestionIndex === index ? (
+                          <MinusIcon />
+                        ) : (
+                          <PlusIcon />
+                        )}
                       </QuestionToggleIcon>
                     </Question>
                     <Answer
                       variants={{
                         open: { opacity: 1, height: "auto", marginTop: "16px" },
-                        collapsed: { opacity: 0, height: 0, marginTop: "0px" }
+                        collapsed: { opacity: 0, height: 0, marginTop: "0px" },
                       }}
                       initial="collapsed"
-                      animate={activeQuestionIndex === index ? "open" : "collapsed"}
-                      transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
+                      animate={
+                        activeQuestionIndex === index ? "open" : "collapsed"
+                      }
+                      transition={{
+                        duration: 0.3,
+                        ease: [0.04, 0.62, 0.23, 0.98],
+                      }}
                     >
                       {faq.answer}
                     </Answer>
