@@ -91,24 +91,14 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
-            {formSubmitted ? (
-              <Form ref={form} onSubmit={sendEmail}>
-              <Toaster/>
-              <Input type="email" name="email" placeholder="Votre adresse e-mail "   required/>
-              <Input type="text" name="name" placeholder="Nom et prénom"   required/>
-              <Input type="text" name="subject" placeholder="Subjet"   required />
-              <Textarea name="message" placeholder="Votre message ici"    required/>
-              
-            </Form>
-            ) : (
             <Form ref={form} onSubmit={sendEmail}>
-              <Toaster/>
               <Input type="email" name="email" placeholder="Votre adresse e-mail "   required/>
               <Input type="text" name="name" placeholder="Nom et prénom"   required/>
               <Input type="text" name="subject" placeholder="Subjet"   required />
               <Textarea name="message" placeholder="Votre message ici"    required/>
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-            </Form>)}
+              <SubmitButton disabled={formSubmitted} type="submit">{submitButtonText}</SubmitButton>
+            </Form>
+
           </TextContent>
         </TextColumn>
       </TwoColumn>
