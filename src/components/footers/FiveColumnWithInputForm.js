@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
-import LogoImage from "images/logo.png";
+import LogoImage from "images/logo.svg";
 import { AiFillFacebook as FacebookIcon} from "react-icons/ai";
 import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
 import { AiFillLinkedin as LinkdinIcon} from "react-icons/ai";
