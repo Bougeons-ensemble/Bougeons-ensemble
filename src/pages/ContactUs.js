@@ -6,7 +6,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
-
+import Localistion from "../images/localisation.jpg"
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
 const Email = tw.span`text-sm mt-6 block text-gray-500`;
@@ -20,36 +20,19 @@ export default () => {
       <ContactDetails
         cards={[
           {
-            title: "tanger ",
+            title: "FSTT ",
             description: (
               <>
                 <Address>
-                  <AddressLine>maroc , Tanger , Boukhalf  </AddressLine>
-                  <AddressLine>tanger </AddressLine>
+                  <AddressLine>maroc , Tanger , Boukhalf , Faculté des sciences et techniques  </AddressLine>
+                  <AddressLine>fstt </AddressLine>
                 </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
+                <Email>bougeonsensemblefstt@gmail.com</Email>
+                <Phone>+0627721832</Phone>
               </>
             )
           },
-          {
-            title: "FSTT",
-            description: (
-              <>
-                <Address>
-                  <AddressLine>Faculté des sciences et techniques de Tanger</AddressLine>
-                  <AddressLine>BP، Tanger</AddressLine>
-                </Address>
-                <Email>http://www.fstt.ac.ma/</Email>
-                <Phone> 0539393954</Phone>
-              </>
-            )
-          },
-          
-          
-          
-          
-        ]}
+           ]}
       />
       <Footer />
     </AnimationRevealPage>

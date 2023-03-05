@@ -5,7 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import EmailIllustrationSrc from "images/Mail-sent.jpg";
-import { useRef } from 'react';
+import { useRef , useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from "react-hot-toast";
 
@@ -44,7 +44,7 @@ export default ({
   subheading = "Contact nous ",
   heading = <> N'hésitez pas <span tw="text-primary-500">de contacter</span><wbr/> nous .</>,
   description = "Si vous avez des questions, des commentaires ou des suggestions à propos du Club Bougeons Ensemble, n'hésitez pas à nous contacter. Nous sommes toujours heureux de recevoir des nouvelles de notre communauté et de discuter de toutes les idées que vous pourriez avoir.",
-  submitButtonText = "envoyer",
+  submitButtonText = "Envoyer",
   // formAction = "#",
   // formMethod = "get",
   textOnLeft = true,
@@ -53,9 +53,13 @@ export default ({
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
   
   const form = useRef ();
+ 
+  const [formSubmitted, setFormSubmitted] = useState(false); // state variable to track form submission
 
   const sendEmail= (e) => {
     e.preventDefault();
+    
+  
 
     emailjs.sendForm('service_9mc4d9o', 'template_6rqyv8h', form.current, '30Q31FxrcIstbbQR_')
       .then((result) => {
@@ -63,7 +67,10 @@ export default ({
         // Clear all input field values
         form.current.reset();
         // Success toast message
-        toast.success("Email est envoye");;
+        toast.success("Email est envoyé");
+        // Set the formSubmitted state to true to hide the submit button
+        setFormSubmitted(true);
+       
           
       }, (error) => {
         console.log(error.text);
@@ -71,6 +78,7 @@ export default ({
         
       });
   };
+  
 
   return (
     <Container>
@@ -83,14 +91,24 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
+            {formSubmitted ? (
+              <Form ref={form} onSubmit={sendEmail}>
+              <Toaster/>
+              <Input type="email" name="email" placeholder="Votre adresse e-mail "   required/>
+              <Input type="text" name="name" placeholder="Nom et prénom"   required/>
+              <Input type="text" name="subject" placeholder="Subjet"   required />
+              <Textarea name="message" placeholder="Votre message ici"    required/>
+              
+            </Form>
+            ) : (
             <Form ref={form} onSubmit={sendEmail}>
               <Toaster/>
-              <Input type="email" name="email" placeholder="Votre adresse e-mail" />
-              <Input type="text" name="name" placeholder="Nom et prénom" />
-              <Input type="text" name="subject" placeholder="Sujet" />
-              <Textarea name="message" placeholder="Votre message ici" />
+              <Input type="email" name="email" placeholder="Votre adresse e-mail "   required/>
+              <Input type="text" name="name" placeholder="Nom et prénom"   required/>
+              <Input type="text" name="subject" placeholder="Subjet"   required />
+              <Textarea name="message" placeholder="Votre message ici"    required/>
               <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-            </Form>
+            </Form>)}
           </TextContent>
         </TextColumn>
       </TwoColumn>
