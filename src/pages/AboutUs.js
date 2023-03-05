@@ -15,7 +15,8 @@ import { GoFileMedia as SupportIconImage } from "react-icons/go";
 import {IoLogoDesignernews as ShieldIconImage } from "react-icons/io";
 import { AiOutlineComment as CustomerLoveIconImage } from "react-icons/ai";
 import { GiTakeMyMoney as financeImage } from "react-icons/gi";
-
+import FistImage from "../images/be-apropos.png"
+import SecondImage from "../images/be-vesion.png"
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
@@ -38,7 +39,8 @@ export default () => {
         vie, ceci à travers des actions et des activités associatives
         dont le but est la distribution d'un bénéfice aux personnes
         souffrant de difficultés."
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        imageSrc ={FistImage} 
+        // imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         />
       <MainFeature1
         id="ourvision"
@@ -60,7 +62,8 @@ export default () => {
         heading="Notre objectif est de perturber l'espace de conception."
         buttonRounded={false}
         primaryButtonText="Contact nous"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        imageSrc ={SecondImage} 
+        // imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
         primaryButtonUrl = "/contactus"
       />
