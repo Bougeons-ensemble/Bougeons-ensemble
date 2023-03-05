@@ -6,11 +6,11 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
-import Localistion from "../images/localisation.jpg"
+import Localistion from "../images/localisation.jpg";
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
-const Email = tw.span`text-sm mt-6 block text-gray-500`;
-const Phone = tw.span`text-sm mt-0 block text-gray-500`;
+const Email = tw.a`text-sm mt-6 block text-gray-500`;
+const Phone = tw.a`text-sm mt-0 block text-gray-500`;
 
 export default () => {
   return (
@@ -20,19 +20,25 @@ export default () => {
       <ContactDetails
         cards={[
           {
-            title: "FSTT ",
+            title: "FSTT",
             description: (
               <>
                 <Address>
-                  <AddressLine>maroc , Tanger , Boukhalf , Faculté des sciences et techniques  </AddressLine>
-                  <AddressLine>fstt </AddressLine>
+                  <AddressLine>
+                    Ancienne Route de l'Aéroport, Km 10, Ziaten. BP : 416.
+                    Tanger - Maroc{" "}
+                  </AddressLine>
                 </Address>
-                <Email>bougeonsensemblefstt@gmail.com</Email>
-                <Phone>+0627721832</Phone>
+                <Email href="mailto:bougeonsensemblefstt@gmail.com">
+                  bougeonsensemblefstt@gmail.com
+                </Email>
+                <Phone href="tel:+ 212 (0) 6 27 72 18 32">
+                  + 212 (0) 6 27 72 18 32
+                </Phone>
               </>
-            )
+            ),
           },
-           ]}
+        ]}
       />
       <Footer />
     </AnimationRevealPage>
