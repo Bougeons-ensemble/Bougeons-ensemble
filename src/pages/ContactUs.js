@@ -6,7 +6,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
-import Localistion from "../images/localisation.jpg";
+// import Localistion from "../images/localisation.jpg";
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;
 const Email = tw.a`text-sm mt-6 block text-gray-500`;

@@ -6,7 +6,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import TeamIllustrationSrc from "images/dons.jpg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -26,7 +26,7 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-4xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
@@ -46,15 +46,15 @@ const FeatureDescription = tw.div`mt-1 text-sm`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = " Dons",
   heading = (
     <>
-      We have the most <span tw="text-primary-500">professional</span> marketing team.
+     Contribuez à notre mission en faisant <span tw="text-primary-500">un don </span>au notre  Club .
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  primaryButtonText = "See Our Portfolio",
-  primaryButtonUrl = "https://timerse.com",
+  description = "Le Club Bougeons Ensemble est une organisation à but non lucratif qui dépend largement des dons de ses sympathisants pour financer ses projets et ses activités. Si vous souhaitez soutenir notre mission de renforcer la communauté de Tanger et de promouvoir des initiatives sociales positives, vous pouvez faire un don  via notre compte banqaire . Votre contribution, quel que soit son montant, nous aidera à continuer notre travail et à avoir un impact positif sur la vie de nombreux habitants de la ville ou de hors . Nous vous remercions pour votre générosité et votre soutien continu.",
+  // primaryButtonText = "See Our Portfolio",
+  // primaryButtonUrl = "https://timerse.com",
   features = null,
   textOnLeft = true
 }) => {
@@ -65,15 +65,11 @@ export default ({
    * `icon` must be a React SVG component. See how BriefcaseIcon is imported above. For a full list of available icons, see Feather Icons.
    */
   const defaultFeatures = [
-    {
-      Icon: BriefcaseIcon,
-      title: "Professionalism",
-      description: "We have the best professional marketing people across the globe just to work with you."
-    },
+   
     {
       Icon: MoneyIcon,
-      title: "Affordable",
-      description: "We promise to offer you the best rate we can - at par with the industry standard."
+      title: "Notre RIB : TIJARI WAFA BANK      ",
+      description: "007 640 0002981300400048 30"
     }
   ];
 
@@ -101,9 +97,9 @@ export default ({
                 </Feature>
               ))}
             </Features>
-            <PrimaryButton as="a" href={primaryButtonUrl}>
+            {/* <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}
-            </PrimaryButton>
+            </PrimaryButton> */}
           </TextContent>
         </TextColumn>
       </TwoColumn>

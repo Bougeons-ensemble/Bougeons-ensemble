@@ -22,7 +22,7 @@ export default () => (
     <MainFeature id="experiences" />
     <Features />
     <MainFeature2 />
-    <Portfolio />
+    {/* <Portfolio /> */}
     <Testimonial
       subheading="Testimonials"
       heading={
@@ -84,9 +84,9 @@ export default () => (
         },
       ]}
     />
-    <Blog />
+    {/* <Blog /> */}
     {/* <contactUs /> */}
-    <ContactUsForm />
+    {/* <ContactUsForm /> */}
     <Footer />
   </AnimationRevealPage>
 );
