@@ -20,13 +20,13 @@ import SecondImage from "../images/be-vesion.png";
 import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
 
 // grid images
-import image1 from "../images/team_images/1.jpg";
-import image2 from "../images/team_images/2.jpg";
-import image3 from "../images/team_images/3.jpg";
-import image4 from "../images/team_images/4.jpg";
-import image5 from "../images/team_images/5.jpg";
-import image6 from "../images/team_images/6.jpg";
-import image7 from "../images/team_images/7.jpg";
+import image1 from "../images/team_images/1.png";
+import image2 from "../images/team_images/2.png";
+import image3 from "../images/team_images/3.png";
+import image4 from "../images/team_images/4.png";
+import image5 from "../images/team_images/5.png";
+import image6 from "../images/team_images/6.png";
+import image7 from "../images/team_images/7.png";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 const cards = [
   {
@@ -87,7 +87,7 @@ const cards = [
   {
     imageSrc: image1,
     position: "Responsable Design",
-    name: "Mohamed El Merabet",
+    name: "Mohamed El Mrabet",
     links: [
       {
         url: "https://linkedin.com/in/MohamedElMerabet",
