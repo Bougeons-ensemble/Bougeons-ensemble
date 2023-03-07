@@ -50,12 +50,12 @@ export default ({
   subheading = "MOT DU PARRAIN",
   heading = (
     <>
-     Nous avons fait cela<wbr /> depuis{" "}
-      <span tw="text-primary-500">2018.</span>
+      Nous avons fait cela
+      <wbr /> depuis <span tw="text-primary-500">2018.</span>
     </>
   ),
   description = "Dans le cadre des activités sociales de la faculté des sciences et techniques de Tanger (FSTT), le club Bougeons Ensemble de la faculté des sciences et techniques de Tanger vous invite à être plus solidaires, plus motivants à travers les actions qu’il organise au profit de toute personne dénuée. Notre mission dépend de votre soutien inconditionnel. Bougeons ensemble pour aider les autres. Bougeons ensemble pour sauver leurs vies. Bougeons ensemble pour tracer le sourire sur le visage des familles diminues.",
-  primaryButtonText = "plus details",
+  primaryButtonText = "Plus details",
   primaryButtonUrl = "#section3",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
