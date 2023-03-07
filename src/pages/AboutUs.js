@@ -12,13 +12,101 @@ import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
 import { GoFileMedia as SupportIconImage } from "react-icons/go";
-import {IoLogoDesignernews as ShieldIconImage } from "react-icons/io";
+import { IoLogoDesignernews as ShieldIconImage } from "react-icons/io";
 import { AiOutlineComment as CustomerLoveIconImage } from "react-icons/ai";
 import { GiTakeMyMoney as financeImage } from "react-icons/gi";
-import FistImage from "../images/be-apropos.png"
-import SecondImage from "../images/be-vesion.png"
+import FistImage from "../images/be-apropos.png";
+import SecondImage from "../images/be-vesion.png";
+import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";
 
+// grid images
+import image1 from "../images/team_images/1.jpg";
+import image2 from "../images/team_images/2.jpg";
+import image3 from "../images/team_images/3.jpg";
+import image4 from "../images/team_images/4.jpg";
+import image5 from "../images/team_images/5.jpg";
+import image6 from "../images/team_images/6.jpg";
+import image7 from "../images/team_images/7.jpg";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
+const cards = [
+  {
+    imageSrc: image6,
+    position: "Président",
+    name: "Yasser Zahri",
+    links: [
+      {
+        url: "https://linkedin.com/in/YasserZahri",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image2,
+    position: "Vice-président ",
+    name: "Safae Afass",
+    links: [
+      {
+        url: "https://linkedin.com/in/SafaeAfassi",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image7,
+    position: "Responsable RH",
+    name: "Sami Bouzerouata",
+    links: [
+      {
+        url: "https://linkedin.com/in/SamiBouzerouata",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image4,
+    position: "Responsable Finance",
+    name: "Mayssoun El Messoudi",
+    links: [
+      {
+        url: "https://linkedin.com/in/MayssounElMessoudi",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image5,
+    position: "Responsable Média",
+    name: "Salma Aanzi",
+    links: [
+      {
+        url: "https://linkedin.com/in/Salma Aanzi",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image1,
+    position: "Responsable Design",
+    name: "Mohamed El Merabet",
+    links: [
+      {
+        url: "https://linkedin.com/in/MohamedElMerabet",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image3,
+    position: "Secrétaire général",
+    name: "Fatimaezzahra Gannoune",
+    links: [
+      {
+        url: "https://linkedin.com/in/FatimaezzahraGannoune",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+];
 export default () => {
   return (
     <AnimationRevealPage>
@@ -28,7 +116,7 @@ export default () => {
         heading="nous sommes non lucratif club "
         buttonRounded={false}
         primaryButtonText="plus de details "
-        primaryButtonUrl = "#ourvision"
+        primaryButtonUrl="#ourvision"
         description="Bougeons Ensemble est un club humanitaire universitaire,
         fondé le 12/10/2018 par des jeunes étudiants de la Faculté
         des Sciences et Techniques de Tanger, qui ont eu l'idée de
@@ -39,33 +127,33 @@ export default () => {
         vie, ceci à travers des actions et des activités associatives
         dont le but est la distribution d'un bénéfice aux personnes
         souffrant de difficultés."
-        imageSrc ={FistImage} 
+        imageSrc={FistImage}
         // imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-        />
+      />
       <MainFeature1
         id="ourvision"
         subheading={<Subheading>Notre vision</Subheading>}
         description="BOUGEONS ENSEMBLE en partenariat avec FONDATION
         SOQYA organisent une action de FORAGE D'UN PUIT en
-        faveur des habitants De la région d’ALHAOUZ, ce coin reculé
+        faveur des habitants De la région d'ALHAOUZ, ce coin reculé
         et méconnu au Maroc où presque 80 familles souffrent pour
         avoir l'accès à l'eau potable , les habitants sont obligés de se
         déplacer des kilomètres en transportant des bouteilles
-        lourdes . C’est souvent les femmes et les enfants qui sont
+        lourdes . C'est souvent les femmes et les enfants qui sont
         confiés à réaliser cette tâche difficile notamment avec les
         reliefs accidentés.
         Et comme vous le savez, la meilleure façon de remercier Dieu
-        pour une bénédiction qu’il nous a donnée est d'en donner .
+        pour une bénédiction qu'il nous a donnée est d'en donner .
         Afin de soulager les souffrances de ces habitants nous vous
         invitons à contribuer dans cette noble action en donnant de
         ce que vous pouvez.  "
         heading="Notre objectif est de perturber l'espace de conception."
         buttonRounded={false}
         primaryButtonText="Contact nous"
-        imageSrc ={SecondImage} 
+        imageSrc={SecondImage}
         // imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
-        primaryButtonUrl = "/contactus"
+        primaryButtonUrl="/contactus"
       />
       <Features
         subheading={<Subheading>Notre celules </Subheading>}
@@ -76,27 +164,32 @@ export default () => {
           {
             imageSrc: SupportIconImage,
             title: "cellule media",
-            description: "est responsable de la création de contenu qui informe les gens sur le travail que le club réalise et sensibilise aux enjeux sociaux importants.",
+            description:
+              "est responsable de la création de contenu qui informe les gens sur le travail que le club réalise et sensibilise aux enjeux sociaux importants.",
           },
           {
             imageSrc: ShieldIconImage,
             title: "cellule design",
-            description: "est responsable de développer des solutions créatives aux problèmes, comme la conception de logos ou la création de supports visuels pour les projets du club"
+            description:
+              "est responsable de développer des solutions créatives aux problèmes, comme la conception de logos ou la création de supports visuels pour les projets du club",
           },
           {
             imageSrc: CustomerLoveIconImage,
             title: "cellule communication ",
-            description: "est responsable de la coordination de toutes les communications du club, y compris la gestion des relations avec les médias."
+            description:
+              "est responsable de la coordination de toutes les communications du club, y compris la gestion des relations avec les médias.",
           },
           {
             imageSrc: financeImage,
             title: "cellule finance",
-            description: "est chargée de collecter des fonds pour soutenir les activités du club et de gérer ses finances de manière responsable"
-        }
-      ]}
+            description:
+              "est chargée de collecter des fonds pour soutenir les activités du club et de gérer ses finances de manière responsable",
+          },
+        ]}
         linkText=""
       />
-      <TeamCardGrid 
+      <TeamCardGrid
+        cards={cards}
         subheading={<Subheading>Notre équipe</Subheading>}
       />
       <Footer />
