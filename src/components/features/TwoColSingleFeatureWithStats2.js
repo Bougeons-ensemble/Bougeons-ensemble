@@ -78,10 +78,10 @@ export default ({
       key: "  Evenements",
       value: "5+",
     },
-    {
-      key: "Budget",
-      value: "100000 dh+ ",
-    },
+    // {
+    //   key: "Budget",
+    //   value: "100000 dh+ ",
+    // },
   ];
 
   if (!statistics) statistics = defaultStatistics;
