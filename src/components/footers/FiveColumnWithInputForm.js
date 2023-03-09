@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
-import LogoImage from "images/logo.png";
+import LogoImage from "images/logo.svg";
 import { AiFillFacebook as FacebookIcon} from "react-icons/ai";
 import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
 import { AiFillLinkedin as LinkdinIcon} from "react-icons/ai";
@@ -144,7 +144,7 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice>&copy; 2018 Be create by S.I . All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/bougeons.ensemble28">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">

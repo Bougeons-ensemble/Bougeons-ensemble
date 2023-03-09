@@ -20,10 +20,10 @@ export default () => (
   <AnimationRevealPage>
     <Hero />
     <MainFeature id="experiences" />
-    <Features />
+    {/* <Features /> */}
     <MainFeature2 />
-    <Portfolio />
-    <Testimonial
+    {/* <Portfolio /> */}
+    {/* <Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -54,21 +54,39 @@ export default () => (
         },
       ]}
       textOnLeft={true}
-    />
+    /> */}
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
       imageShadow={false}
+      description="Voici quelques questions fréquemment posées sur notre club par nos donateurs aimants. Si vous avez d'autres questions, n'hésitez pas à communiquer avec nous au moyen du formulaire ci-dessous."
       subheading="FAQs"
       heading={
         <>
-          Do you have <span tw="text-primary-500">Questions ?</span>
+          Avez-vous des <span tw="text-primary-500">questions ?</span>
         </>
       }
+      faqs={[
+        {
+          question: "Comment nous rejoindre ?",
+          answer:
+            "Le club étant un club universitaire, l'adhésion est limitée aux seuls étudiants de la Faculté des Sciences et Techniques de Tanger.Les portes du club sont ouvertes aux étudiants au début de chaque saison académique et également pendant la saison scolaire (au besoin).",
+        },
+        {
+          question: "Notre objectif ?",
+          answer:
+            "Notre objectif est de soutenir l'idée du volontariat comme mode de vie, à travers des actions, des activités et des voyages caritatifs visant à distribuer le bénéfice aux personnes en difficulté.",
+        },
+        {
+          question: "Qui sommes-nous?",
+          answer:
+            "Bougeons Ensemble est un club universitaire caritatif à but non lucratif qui relève de la Faculté des Sciences et Techniques de Tanger et a été fondé en 2018 par les étudiants de cette faculté.Ce club humanitaire rassemble des personnes qui travaillent pour l'intérêt collectif qui prend soin des besoins de la communauté.",
+        },
+      ]}
     />
-    <Blog />
+    {/* <Blog /> */}
     {/* <contactUs /> */}
-    <ContactUsForm />
+    {/* <ContactUsForm /> */}
     <Footer />
   </AnimationRevealPage>
 );
