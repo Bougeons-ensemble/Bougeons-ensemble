@@ -1,6 +1,8 @@
 {
   "short_name": "Bougeons ensemble",
+
   "name": "Bougeons ensemble club tanger  ",
+
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +10,16 @@
       "type": "image/x-icon"
     },
     {
+
       "src": "logo.png",
+
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+
       "src": "logo-22.png",
+
       "type": "image/png",
       "sizes": "512x512"
     }
