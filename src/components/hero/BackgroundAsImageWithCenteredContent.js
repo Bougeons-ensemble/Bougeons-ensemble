@@ -23,13 +23,13 @@ const StyledHeader = styled(Header)`
   }
 `;
 
-const SlantedBackground = styled.span`
-  ${tw`relative text-primary-500 px-4 -mx-4 py-2 text-5xl`}
-  &::before {
-    content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
-  }
-`;
+// const SlantedBackground = styled.span`
+//   ${tw`relative text-primary-500 px-4 -mx-4 py-2 text-5xl`}
+//   &::before {
+//     content: "";
+//     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
+//   }
+// `;
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
