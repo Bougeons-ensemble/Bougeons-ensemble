@@ -90,7 +90,7 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Les activités</ColumnHeading>
+            <ColumnHeading href="">Les activités</ColumnHeading>
             <LinkList>
               <LinkListItem>
                 <Link href="#">Logos</Link>
@@ -107,19 +107,19 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Contact nous</ColumnHeading>
+            <ColumnHeading to="/contact">Contact nous</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">GDPR</Link>
+                <Link href="#">Contact nous</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="#">formullaire</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Terms of Service</Link>
+                <Link href="#">Emplacement</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="#"></Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -144,7 +144,7 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice>&copy; 2018 Be create by S.I . All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/bougeons.ensemble28">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">

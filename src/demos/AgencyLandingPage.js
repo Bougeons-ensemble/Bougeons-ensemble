@@ -4,12 +4,12 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
-import Features from "components/features/DashedBorderSixFeatures";
+// import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 // import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
+// import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 
 // import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
@@ -20,10 +20,10 @@ export default () => (
   <AnimationRevealPage>
     <Hero />
     <MainFeature id="experiences" />
-    <Features />
+    {/* <Features /> */}
     <MainFeature2 />
     {/* <Portfolio /> */}
-    <Testimonial
+    {/* <Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -54,7 +54,7 @@ export default () => (
         },
       ]}
       textOnLeft={true}
-    />
+    /> */}
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
