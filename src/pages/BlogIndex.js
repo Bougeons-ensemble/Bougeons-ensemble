@@ -87,7 +87,7 @@ export default ({
   return (
     <AnimationRevealPage>
       <Header />
-      <Container>
+      {/* <Container>
         <ContentWithPaddingXl>
           <HeadingRow>
             <Heading>{headingText}</Heading>
@@ -113,7 +113,7 @@ export default ({
             </ButtonContainer>
           )}
         </ContentWithPaddingXl>
-      </Container>
+      </Container> */}
       <Footer />
     </AnimationRevealPage>
   );

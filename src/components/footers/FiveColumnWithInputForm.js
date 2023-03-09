@@ -144,7 +144,7 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice>&copy; 2018 Be create by S.I . All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/bougeons.ensemble28">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">

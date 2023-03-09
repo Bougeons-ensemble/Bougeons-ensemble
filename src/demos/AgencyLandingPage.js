@@ -20,10 +20,10 @@ export default () => (
   <AnimationRevealPage>
     <Hero />
     <MainFeature id="experiences" />
-    <Features />
+    {/* <Features /> */}
     <MainFeature2 />
     {/* <Portfolio /> */}
-    <Testimonial
+    {/* <Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -54,7 +54,7 @@ export default () => (
         },
       ]}
       textOnLeft={true}
-    />
+    /> */}
     <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
