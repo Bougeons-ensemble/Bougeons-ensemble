@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
@@ -18,7 +21,7 @@ const ThreeColumnContainer = styled.div`
   ${tw`mt-10 flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap lg:justify-center max-w-screen-lg mx-auto`}
 `;
 const Column = styled.div`
-  ${tw`lg:w-1/3 max-w-xs`}
+  ${tw`lg:w-1/4 max-w-xs`}
 `;
 
 const Card = styled.a`
@@ -51,13 +54,13 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 export default ({
-  cards ,
+  cards,
   linkText = "Learn More",
   heading = "",
   subheading = "",
   description = "",
   imageContainerCss = null,
-  iconFill="#333"
+  iconFill = "#333",
 }) => {
   /*
    * This componets accepts a prop - `cards` which is an array of object denoting the cards. Each object in the cards array can have the following keys (Change it according to your need, you can also add more objects to have more cards in this feature component):
@@ -77,7 +80,7 @@ export default ({
             <Column key={i}>
               <Card href={card.url}>
                 <span className="imageContainer" css={imageContainerCss}>
-                  <card.imageSrc fill={iconFill}/>
+                  <card.imageSrc fill={iconFill} />
                   {/* <img src={card.imageSrc} alt="" css={imageCss} /> */}
                 </span>
                 <span className="title">{card.title}</span>
