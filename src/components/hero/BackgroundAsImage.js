@@ -87,8 +87,8 @@ export default (navLinks) => {
               background="transparent"
             /> */}
             <StyledResponsiveVideoEmbed
-              poster="https://media.licdn.com/dms/image/C4E05AQHzqpMAr0uTmw/feedshare-thumbnail_720_1280/0/1676414134377?e=1678309200&amp;v=beta&amp;t=Aia5UaWRLXUtJrdD2aWNxLcrb02-3UrGYZuJ8kHTQEE"
-              url="https://dms.licdn.com/playlist/C4E05AQHzqpMAr0uTmw/mp4-720p-30fp-crf28/0/1676416732464?e=1678309200&amp;v=beta&amp;t=gzqGLb8IQJgfvnsYM_y9KBi-qOpWg90X21g4KfkeHO0"
+              poster="https://media.licdn.com/dms/image/C4E05AQHzqpMAr0uTmw/feedshare-thumbnail_720_1280/0/1676414134377?e=1679000400&v=beta&t=aZjv5DIvn9Bj0Nc5yY7WAQ43xiEr73Kt6nmqrwrAaqo"
+              url="https://dms.licdn.com/playlist/C4E05AQHzqpMAr0uTmw/mp4-720p-30fp-crf28/0/1676416732464?e=1679000400&v=beta&t=EJNwEmE2Xa_jA8vte6hxwIDH_TqS_lb-KIJluXwYBZA"
             ></StyledResponsiveVideoEmbed>
           </RightColumn>
         </TwoColumn>
