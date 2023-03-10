@@ -5,9 +5,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import LogoImage from "images/logo.svg";
-import { AiFillFacebook as FacebookIcon} from "react-icons/ai";
+import { AiFillFacebook as FacebookIcon } from "react-icons/ai";
 import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
-import { AiFillLinkedin as LinkdinIcon} from "react-icons/ai";
+import { AiFillLinkedin as LinkdinIcon } from "react-icons/ai";
 import { FaTiktok as TiktokIcon } from "react-icons/fa";
 // import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 // import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
@@ -25,12 +25,16 @@ const LinkList = tw.ul`mt-6 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
 const Link = tw.a`hover:border-b-2 border-transparent hocus:border-gray-700 pb-1 transition duration-300`;
 
-const SubscribeNewsletterColumn = tw(Column)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
+const SubscribeNewsletterColumn = tw(
+  Column
+)`text-center lg:text-left w-full! lg:w-auto! mt-20 lg:mt-12`;
 const SubscribeNewsletterContainer = tw.div`max-w-sm mx-auto lg:mx-0 `;
 const SubscribeText = tw.p`mt-2 lg:mt-6 text-sm font-medium text-gray-600`;
 const SubscribeForm = tw.form`mt-4 lg:mt-6 text-sm sm:flex max-w-xs sm:max-w-none mx-auto sm:mx-0`;
 const Input = tw.input`bg-gray-300 px-6 py-3 rounded sm:rounded-r-none border-2 sm:border-r-0 border-gray-400 hover:border-primary-500 focus:outline-none transition duration-300 w-full`;
-const SubscribeButton = tw(PrimaryButtonBase)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3  bg-primary-600`;
+const SubscribeButton = tw(
+  PrimaryButtonBase
+)`mt-4 sm:mt-0 w-full sm:w-auto rounded sm:rounded-l-none px-8 py-3  bg-primary-600`;
 
 const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 
@@ -40,7 +44,7 @@ const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
-const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
+const CopywriterNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
@@ -59,16 +63,24 @@ export default () => {
             <ColumnHeading>Accueil </ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
+                <Link href="#" aria-label="link to ">
+                  Blog
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">FAQs</Link>
+                <Link href="#" aria-label="link to ">
+                  FAQs
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Support</Link>
+                <Link href="#" aria-label="link to ">
+                  Support
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link href="#" aria-label="link to ">
+                  About Us
+                </Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -76,16 +88,24 @@ export default () => {
             <ColumnHeading>À propos de nous</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">A propos de Be </Link>
+                <Link href="#" aria-label="link to ">
+                  A propos de Be{" "}
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Notre vision</Link>
+                <Link href="#" aria-label="link to ">
+                  Notre vision
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Notre cellules </Link>
+                <Link href="#" aria-label="link to ">
+                  Notre cellules{" "}
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Notre equipe</Link>
+                <Link href="#" aria-label="link to ">
+                  Notre equipe
+                </Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -93,16 +113,24 @@ export default () => {
             <ColumnHeading href="">Les activités</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Logos</Link>
+                <Link href="#" aria-label="link to ">
+                  Logos
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Events</Link>
+                <Link href="#" aria-label="link to ">
+                  Events
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Stories</Link>
+                <Link href="#" aria-label="link to ">
+                  Stories
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Office</Link>
+                <Link href="#" aria-label="link to ">
+                  Office
+                </Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -110,16 +138,22 @@ export default () => {
             <ColumnHeading to="/contact">Contact nous</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Contact nous</Link>
+                <Link href="#" aria-label="link to ">
+                  Contact nous
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">formullaire</Link>
+                <Link href="#" aria-label="link to ">
+                  formullaire
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Emplacement</Link>
+                <Link href="#" aria-label="link to ">
+                  Emplacement
+                </Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#"></Link>
+                <Link href="#" aria-label="link to "></Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -127,7 +161,8 @@ export default () => {
             <SubscribeNewsletterContainer>
               <ColumnHeading> ABONNEZ-VOUS À NOTRE NEWSLETTER</ColumnHeading>
               <SubscribeText>
-              Nous livrons des articles de blog de haute qualité rédigés par notre professionnelle équipe de contenu 
+                Nous livrons des articles de blog de haute qualité rédigés par
+                notre professionnelle équipe de contenu
               </SubscribeText>
               <SubscribeForm method="get" action="#">
                 <Input type="email" placeholder="Votre adresse e-mail" />
@@ -139,22 +174,33 @@ export default () => {
         <Divider />
         <ThreeColRow>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
+            <LogoImg alt="Bougeons ensemble logo" src={LogoImage} />
             <LogoText>Bougeons ensemble.</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Be create by S.I . All Rights Reserved.</CopywrightNotice>
+          <CopywriterNotice>
+            &copy; 2018 Be create by S.I . All Rights Reserved.
+          </CopywriterNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://www.facebook.com/bougeons.ensemble28">
+            <SocialLink
+              aria-label="link to facebook"
+              href="https://www.facebook.com/bougeons.ensemble28"
+            >
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TiktokIcon  />
+            <SocialLink aria-label="link to twitter" href="https://twitter.com">
+              <TiktokIcon />
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/bougeons-ensemble-505370255/">
+            <SocialLink
+              aria-label="link to linkedin"
+              href="https://www.linkedin.com/in/bougeons-ensemble-505370255/"
+            >
               <LinkdinIcon />
             </SocialLink>
-            <SocialLink href="https://instagram.com/bougeons_ensemble?igshid=OTJlNzQ0NWM=">
-              <Instgrameicon/>
+            <SocialLink
+              aria-label="link to instagram"
+              href="https://instagram.com/bougeons_ensemble?igshid=OTJlNzQ0NWM="
+            >
+              <Instgrameicon />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>

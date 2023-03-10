@@ -119,6 +119,8 @@ export default ({
         <NavToggle
           onClick={toggleNavbar}
           className={showNavLinks ? "open" : "closed"}
+          role="button"
+          aria-label="toggle nav bar button"
         >
           {showNavLinks ? (
             <CloseIcon tw="w-6 h-6" />
