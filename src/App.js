@@ -104,7 +104,7 @@ import GlobalStyles from "styles/GlobalStyles";
 import MainLandingPage from "./demos/AgencyLandingPage";
 // import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "pages/ContactUs";
 import AboutUs from "pages/AboutUs";
 import BlogIndex from "pages/BlogIndex";
