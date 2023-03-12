@@ -110,6 +110,10 @@ import AboutUs from "pages/AboutUs";
 import BlogIndex from "pages/BlogIndex";
 import NotFoundPage from "pages/NotFoundPage";
 
+
+
+
+
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
