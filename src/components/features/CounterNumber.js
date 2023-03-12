@@ -13,8 +13,8 @@ const NumberCounte = styled.div`
   font-weight: bold;
   color: #243E63;
   gap: 2rem;
-  @media (max-width: 400x) {
-    font-size: 1rem;
+  @media (max-width: 610x) {
+    font-size: 0.5rem;
   }
 
 `;
@@ -23,7 +23,7 @@ const Cuontnumb = styled.div`
   justify-content: center;
   align-items: center;
   gap : 4rem;
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
    gap : 2rem;
    flex-direction: column;
    
@@ -35,7 +35,7 @@ const PostText = styled.div`
   font-size: 2rem;
   font-weight: normal;
   color: #7c8ba1;
-  @media (max-width: 400px) {
+  @media (max-width: 610px) {
     font-size: 1.5rem;
   }
 `;
@@ -45,7 +45,7 @@ export default function App() {
   return (
     <Cuontnumb>
     <NumberCounte>
-      <PostText> Activities </PostText>
+      <PostText> Activités</PostText>
     <CountUp
       end={15}
       duration={20}
@@ -55,6 +55,15 @@ export default function App() {
   </NumberCounte>
     <NumberCounte>
       <PostText>Membres</PostText>
+    <CountUp
+      end={80}
+      duration={20}
+      prefix ={"+ "}
+    />
+    
+  </NumberCounte>
+    <NumberCounte>
+      <PostText> Bénéficiaires</PostText>
     <CountUp
       end={80}
       duration={20}
