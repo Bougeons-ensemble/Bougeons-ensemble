@@ -47,7 +47,7 @@ export default function App() {
     <NumberCounte>
       <PostText> Activités</PostText>
     <CountUp
-      end={15}
+      end={40}
       duration={20}
       prefix ={"+ "}
     />
@@ -56,7 +56,7 @@ export default function App() {
     <NumberCounte>
       <PostText>Membres</PostText>
     <CountUp
-      end={80}
+      end={75}
       duration={20}
       prefix ={"+ "}
     />
@@ -65,7 +65,7 @@ export default function App() {
     <NumberCounte>
       <PostText> Bénéficiaires</PostText>
     <CountUp
-      end={80}
+      end={2500}
       duration={20}
       prefix ={"+ "}
     />
