@@ -11,6 +11,8 @@ import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { NavLink as Link } from "react-router-dom";
 
+const LogoImg = tw.img`w-8 h-8 block`;
+
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto
@@ -84,7 +86,7 @@ export default ({
 
   const defaultLogoLink = (
     <LogoLink to="/">
-      <img src={logo} alt="logo" />
+      <LogoImg src={logo} alt="logo" />
     </LogoLink>
   );
   const defaultLink = [
