@@ -7,7 +7,7 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import EmailIllustrationSrc from "images/Mail-sent.jpg";
+import EmailIllustrationSrc from "images/Mail-sent.webp";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
@@ -97,7 +97,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image imageSrc={EmailIllustrationSrc} />
+          <Image loading="lazy" imageSrc={EmailIllustrationSrc} />
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

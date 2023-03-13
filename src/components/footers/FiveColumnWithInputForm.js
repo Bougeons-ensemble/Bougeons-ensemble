@@ -5,10 +5,10 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import LogoImage from "images/logo.svg";
-import { AiFillFacebook as FacebookIcon } from "react-icons/ai";
-import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
-import { AiFillLinkedin as LinkdinIcon } from "react-icons/ai";
-import { FaTiktok as TiktokIcon } from "react-icons/fa";
+import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
+import { ReactComponent as Instgrameicon } from "images/instagram-icon.svg";
+import { ReactComponent as LinkdinIcon } from "images/linkedin-icon.svg";
+import { ReactComponent as TiktokIcon } from "images/tiktok-icon.svg";
 // import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 // import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 // import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
