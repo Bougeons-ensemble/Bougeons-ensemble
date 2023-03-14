@@ -8,8 +8,8 @@ Modal.setAppElement("#root");
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
-  <>
+  <React.StrictMode>
     <Toaster />
     <App />
-  </>
+  </React.StrictMode>
 );
