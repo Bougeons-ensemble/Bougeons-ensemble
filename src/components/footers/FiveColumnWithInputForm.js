@@ -5,10 +5,10 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 
 import LogoImage from "images/logo.svg";
-import { AiFillFacebook as FacebookIcon } from "react-icons/ai";
-import { AiFillInstagram as Instgrameicon } from "react-icons/ai";
-import { AiFillLinkedin as LinkdinIcon } from "react-icons/ai";
-import { FaTiktok as TiktokIcon } from "react-icons/fa";
+import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
+import { ReactComponent as Instgrameicon } from "images/instagram-icon.svg";
+import { ReactComponent as LinkdinIcon } from "images/linkedin-icon.svg";
+import { ReactComponent as TiktokIcon } from "images/tiktok-icon.svg";
 // import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 // import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 // import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
@@ -41,7 +41,7 @@ const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-6 h-6 block`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
 const CopywriterNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;

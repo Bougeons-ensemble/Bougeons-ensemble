@@ -11,10 +11,12 @@ import MainFeature1 from "components/features/TwoColWithButton.js";
 import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
-import { GoFileMedia as SupportIconImage } from "react-icons/go";
-import { IoLogoDesignernews as ShieldIconImage } from "react-icons/io";
-import { AiOutlineComment as CustomerLoveIconImage } from "react-icons/ai";
-import { GiTakeMyMoney as financeImage } from "react-icons/gi";
+
+import { ReactComponent as SupportIconImage } from "images/support-icon.svg";
+import { ReactComponent as ShieldIconImage } from "images/shield-icon.svg";
+import { ReactComponent as CustomerLoveIconImage } from "images/simple-icon.svg";
+import { ReactComponent as financeImage } from "images/love-icon.svg";
+
 import FistImage from "../images/be-apropos.png";
 import SecondImage from "../images/be-vesion.png";
 import { ReactComponent as LinkedinIcon } from "images/linkedin-icon.svg";

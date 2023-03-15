@@ -9,7 +9,7 @@ import {
 // import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 // import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
-import TeamIllustrationSrc from "images/dons.jpg";
+import TeamIllustrationSrc from "images/dons.webp";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -84,7 +84,7 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image imageSrc={TeamIllustrationSrc} />
+          <Image loading="lazy" imageSrc={TeamIllustrationSrc} />
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
