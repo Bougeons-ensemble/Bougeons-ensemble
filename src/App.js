@@ -107,12 +107,8 @@ import MainLandingPage from "./demos/AgencyLandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "pages/ContactUs";
 import AboutUs from "pages/AboutUs";
-import BlogIndex from "pages/BlogIndex";
+// import BlogIndex from "pages/BlogIndex";
 import NotFoundPage from "pages/NotFoundPage";
-
-
-
-
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -126,7 +122,7 @@ export default function App() {
           <Route path="/" element={<MainLandingPage />} />
           <Route path="/contactNous" element={<ContactUs />}></Route>
           <Route path="/aProposDeNous" element={<AboutUs />}></Route>
-          <Route path="/activities" element={<BlogIndex />}></Route>
+          {/* <Route path="/activities" element={<BlogIndex />}></Route> */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
