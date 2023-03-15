@@ -2,12 +2,10 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import heroImage from "../../images/hero.jpg";
+import heroImage from "../../images/hero.webp";
 
 import Header, {
   NavLink,
-  NavLinks,
-  PrimaryLink as PrimaryLinkBase,
   LogoLink,
   NavToggle,
   DesktopNavLinks,
@@ -23,14 +21,6 @@ const StyledHeader = styled(Header)`
   }
 `;
 
-// const SlantedBackground = styled.span`
-//   ${tw`relative text-primary-500 px-4 -mx-4 py-2 text-5xl`}
-//   &::before {
-//     content: "";
-//     ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
-//   }
-// `;
-const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
   background-image: url(${heroImage});
@@ -53,17 +43,7 @@ const Heading = styled.h1`
 const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Locations</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">Hire Us</PrimaryLink>
-    </NavLinks>,
-  ];
+  const navLinks = [];
 
   return (
     <Container>
