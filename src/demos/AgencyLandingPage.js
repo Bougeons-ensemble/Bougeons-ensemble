@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Counter_number from "components/features/CounterNumber";
+import CounterNumber from "components/features/CounterNumber";
 
 import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
 // import Features from "components/features/DashedBorderSixFeatures";
@@ -21,7 +21,7 @@ export default () => (
   <AnimationRevealPage>
     <Hero />
     <MainFeature id="experiences" />
-    <Counter_number/>
+    <CounterNumber />
     {/* <Features /> */}
     <MainFeature2 />
     {/* <Portfolio /> */}
