@@ -56,7 +56,7 @@ export default ({
   ),
   description = "Dans le cadre des activités sociales de la faculté des sciences et techniques de Tanger (FSTT), le club Bougeons Ensemble de la faculté des sciences et techniques de Tanger vous invite à être plus solidaires, plus motivants à travers les actions qu’il organise au profit de toute personne dénuée. Notre mission dépend de votre soutien inconditionnel. Bougeons ensemble pour aider les autres. Bougeons ensemble pour sauver leurs vies. Bougeons ensemble pour tracer le sourire sur le visage des familles diminues.",
   primaryButtonText = "Plus details",
-  primaryButtonUrl = "#section3",
+  primaryButtonUrl = "#dons",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -70,14 +70,14 @@ export default ({
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
   //Change the statistics variable as you like, add or delete objects
   const defaultStatistics = [
-    {
-      key: "Membres",
-      value: "80+",
-    },
-    {
-      key: "  Evenements",
-      value: "5+",
-    },
+    // {
+    //   key: "Membres",
+    //   value: "80+",
+    // },
+    // {
+    //   key: "  Evenements",
+    //   value: "5+",
+    // },
     // {
     //   key: "Budget",
     //   value: "100000 dh+ ",

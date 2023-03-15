@@ -56,7 +56,7 @@ export default () => {
           <Notification>
             Nous avons maintenant lancé des opérations à Tanger.
           </Notification>
-          <a href="#experiences">
+          <a href="#parrain">
             <PrimaryAction>Plus de Details</PrimaryAction>
           </a>
         </Content>

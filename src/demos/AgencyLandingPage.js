@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import CounterNumber from "components/features/CounterNumber";
 
 import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
 // import Features from "components/features/DashedBorderSixFeatures";
@@ -19,9 +20,10 @@ import customerSupportIllustrationSrc from "images/customer-support-illustration
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    <MainFeature id="experiences" />
+    <MainFeature id="parrain" />
+    <CounterNumber />
     {/* <Features /> */}
-    <MainFeature2 />
+    <MainFeature2 id="dons" />
     {/* <Portfolio /> */}
     {/* <Testimonial
       subheading="Testimonials"
