@@ -56,7 +56,7 @@ export default ({
   ),
   description = "Dans le cadre des activités sociales de la faculté des sciences et techniques de Tanger (FSTT), le club Bougeons Ensemble de la faculté des sciences et techniques de Tanger vous invite à être plus solidaires, plus motivants à travers les actions qu’il organise au profit de toute personne dénuée. Notre mission dépend de votre soutien inconditionnel. Bougeons ensemble pour aider les autres. Bougeons ensemble pour sauver leurs vies. Bougeons ensemble pour tracer le sourire sur le visage des familles diminues.",
   primaryButtonText = "Plus details",
-  primaryButtonUrl = "#section3",
+  primaryButtonUrl = "#dons",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,

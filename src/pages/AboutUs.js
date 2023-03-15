@@ -117,8 +117,7 @@ export default () => {
         subheading={<Subheading>A propos de Bougeons ensemble</Subheading>}
         heading="nous sommes non lucratif club "
         buttonRounded={false}
-        primaryButtonText="plus de details "
-        primaryButtonUrl="#ourvision"
+        primaryButtonText="Plus de details "
         description="Bougeons Ensemble est un club humanitaire universitaire,
         fondé le 12/10/2018 par des jeunes étudiants de la Faculté
         des Sciences et Techniques de Tanger, qui ont eu l'idée de
@@ -155,7 +154,6 @@ export default () => {
         imageSrc={SecondImage}
         // imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
-        primaryButtonUrl="/contactus"
       />
       <Features
         subheading={<Subheading>Notre celules </Subheading>}

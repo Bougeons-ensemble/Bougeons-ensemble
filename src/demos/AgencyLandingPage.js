@@ -20,10 +20,10 @@ import customerSupportIllustrationSrc from "images/customer-support-illustration
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    <MainFeature id="experiences" />
+    <MainFeature id="parrain" />
     <CounterNumber />
     {/* <Features /> */}
-    <MainFeature2 />
+    <MainFeature2 id="dons" />
     {/* <Portfolio /> */}
     {/* <Testimonial
       subheading="Testimonials"
