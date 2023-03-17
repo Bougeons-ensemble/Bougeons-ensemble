@@ -1,3 +1,7 @@
+
+Description:Bougeons ensemble est un club à but non lucratif dont le but est d'aider les personnes dans le besoin
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Script
