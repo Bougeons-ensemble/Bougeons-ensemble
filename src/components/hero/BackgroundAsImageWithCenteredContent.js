@@ -54,7 +54,7 @@ export default () => {
           {/* <SlantedBackground>Bougeons Ensemble.</SlantedBackground> */}
           <Heading>Bougeons Ensemble.</Heading>
           <Notification>
-            Nous avons maintenant lancé des opérations à Tanger.
+          Pour aider les autres, sauver leurs vies et tracer le sourire sur les visages.
           </Notification>
           <a href="#parrain">
             <PrimaryAction>Plus de Details</PrimaryAction>
