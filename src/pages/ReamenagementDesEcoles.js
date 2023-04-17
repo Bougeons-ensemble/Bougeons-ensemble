@@ -62,7 +62,7 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "",
+        "l est nécessaire que l'environnement scolaire soit agréable pour que les élèves puissent étudier dans des conditions optimales. Le CLUB BOUGEONS ENSEMBLE  s'engage ainsi  à réaménager des écoles dans le cadre de l'un de ses projets annuels . L'objectif est de créer un espace de vie scolaire adapté et propice à l'apprentissage.Les activités menées dans le cadre de ce projet de réaménagement comprennent notamment la peinture, le jardinage, le dessin, et d'autres activités simples mais qui apportent de la joie aux élèves. L'objectif est d'embellir les espaces de vie scolaire, et de créer un environnement plus accueillant et plus engageant pour tous.",
       // url: "https://timerse.com"
     },
 
@@ -71,7 +71,7 @@ export default () => {
           // subtitle: "Exclusive",
       // title: "Lollapalooza, Manhattan",
       description:
-        ".",
+        "Ce projet est un exemple concret de la façon dont la communauté peut se mobiliser pour améliorer l'environnement éducatif et contribuer à l'épanouissement des enfants. En créant un environnement scolaire plus agréable et plus stimulant, nous pouvons aider les élèves à réaliser leur plein potentiel.",
       // url: "https://timerse.com"
     }
   ];
@@ -82,7 +82,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Réaménagement des écoles</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>

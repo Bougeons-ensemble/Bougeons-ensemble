@@ -82,7 +82,7 @@ import GlobalStyles from "styles/GlobalStyles";
 // import Footer from "components/footers/MiniCenteredFooter.js";
 
 /* Ready Made Pages (from demos folder) */
-// import EventLandingPage from "demos/EventLandingPage.js";
+// import EventLandingPage from "demos/EventLagit ndingPage.js";
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
@@ -113,7 +113,7 @@ import RéaménagementdesEcoles from "pages/ReamenagementDesEcoles";
 import  PanierDuRamadan from "pages/PanierDuRamadan";
 import IftarSaim from "pages/IftarSaim";
 import ForageDePuit from "pages/ForageDePuit";
-import DonDuSang from "pages/DonDuSang ";
+import DonDuSang from "pages/DonDuSang";
 import NotFoundPage from "pages/NotFoundPage";
 
 
@@ -137,7 +137,7 @@ export default function App() {
           <Route path="/activities/panierduRamadan" element={<PanierDuRamadan/>}></Route>
           <Route path="/activities/iftarSaim" element={<IftarSaim />}></Route> 
           <Route path="/activities/forageDePuit" element={<ForageDePuit/>}></Route>
-          <Route path="/activities/donDuSang " element={<DonDuSang />}></Route> 
+          <Route path="/activities/donDuSang" element={<DonDuSang />}></Route> 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
