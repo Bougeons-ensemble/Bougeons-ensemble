@@ -93,7 +93,7 @@ export default ({
     <NavLinks key={1}>
       <NavLink to="/">Accueil </NavLink>
       <NavLink to="/aProposDeNous">À propos de nous</NavLink>
-      {/* <NavLink to="/activities">Les activités</NavLink> */}
+      <NavLink to="/activities">Les activités</NavLink>
       <NavLink to="/contactNous">Contact nous</NavLink>
     </NavLinks>,
   ];

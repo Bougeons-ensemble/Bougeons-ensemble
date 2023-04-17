@@ -96,7 +96,7 @@ import GlobalStyles from "styles/GlobalStyles";
 // import PricingPage from "pages/Pricing.js";
 // import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
+import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
@@ -107,8 +107,16 @@ import MainLandingPage from "./demos/AgencyLandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactUs from "pages/ContactUs";
 import AboutUs from "pages/AboutUs";
-// import BlogIndex from "pages/BlogIndex";
+import CravneAldifeePage from "pages/CaravaneAldifee";
+import DeffiKhouk from "pages/DeffiKhouk"
+import RéaménagementdesEcoles from "pages/ReamenagementDesEcoles";
+import  PanierDuRamadan from "pages/PanierDuRamadan";
+import IftarSaim from "pages/IftarSaim";
+import ForageDePuit from "pages/ForageDePuit";
+import DonDuSang from "pages/DonDuSang ";
 import NotFoundPage from "pages/NotFoundPage";
+
+
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -122,7 +130,14 @@ export default function App() {
           <Route path="/" element={<MainLandingPage />} />
           <Route path="/contactNous" element={<ContactUs />}></Route>
           <Route path="/aProposDeNous" element={<AboutUs />}></Route>
-          {/* <Route path="/activities" element={<BlogIndex />}></Route> */}
+          <Route path="/activities" element={<BlogIndexPage />}></Route>
+          <Route path="/activities/caravaneAldifee" element={<CravneAldifeePage />}></Route>
+          <Route path="/activities/réaménagementdesEcoles" element={<RéaménagementdesEcoles />}></Route> 
+         <Route path="/activities/deffiKhouk" element={<DeffiKhouk />}></Route> 
+          <Route path="/activities/panierduRamadan" element={<PanierDuRamadan/>}></Route>
+          <Route path="/activities/iftarSaim" element={<IftarSaim />}></Route> 
+          <Route path="/activities/forageDePuit" element={<ForageDePuit/>}></Route>
+          <Route path="/activities/donDuSang " element={<DonDuSang />}></Route> 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
