@@ -21,7 +21,7 @@ const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-6 h-6 block`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
 
-const CopywriterNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
+// const CopywriterNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
@@ -40,7 +40,7 @@ export default () => {
             <LogoImg alt="Bougeons ensemble logo" src={LogoImage} />
             <LogoText>Bougeons ensemble.</LogoText>
           </LogoContainer>
-          <CopywriterNotice>
+          {/* <CopywriterNotice>
             &copy;Pour contribuer à ce projet{" "}
             <a
               style={{ color: "#333" }}
@@ -49,7 +49,7 @@ export default () => {
             >
               Github repo
             </a>
-          </CopywriterNotice>
+          </CopywriterNotice> */}
           <SocialLinksContainer>
             <SocialLink
               aria-label="link to facebook"
