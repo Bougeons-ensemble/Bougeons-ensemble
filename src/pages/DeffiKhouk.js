@@ -100,7 +100,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Deffi Khouk</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>

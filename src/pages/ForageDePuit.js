@@ -89,7 +89,7 @@ export default () => {
           // subtitle: "Exclusive",
       // title: "Lollapalooza, Manhattan",
       description:
-        ".",
+        "forage de puits Une initiative humanitaire en partenariat avec la Fondation Souqya pour forer des puits dans des régions reculées où l'accès à l'eau potable est malheureusement difficile pour ces communautés .Et Pour rendre cette action plus ludique et interactive pour les enfants  de ces régions , des activités de divertissement ont été organisées pendant les fouilles.Cette action humanitaire illustre parfaitement les valeurs fondamentales que prône le CLUB BOUGEONS ENSEMBLE, à savoir l'empathie, la bienveillance et le souci du bien-être collectif pour une société plus juste et solidaire ..",
       // url: "https://timerse.com"
     }
   ];
@@ -100,7 +100,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Forage de puit</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>

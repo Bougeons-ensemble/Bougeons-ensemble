@@ -80,7 +80,7 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "",
+        "Le mois du Ramadan est l'occasion pour les musulmans de renforcer leur spiritualité et leur engagement envers la générosité et la solidarité. Dans ce contexte, le CLUB BOUGEONS ENSEMBLE lance Le panier de Ramadan, une initiative qui consiste à collecter des denrées alimentaires de base ;  sucre,  farine, huile  et autres produits de première nécessité pour les redistribuer aux familles démunies de Tanger à s'alimenter dignement. ",
       // url: "https://timerse.com"
     },
 
@@ -89,7 +89,7 @@ export default () => {
           // subtitle: "Exclusive",
       // title: "Lollapalooza, Manhattan",
       description:
-        ".",
+        "Grâce à cette initiative, le CLUB BOUGEONS ENSEMBLE espère apporter un peu de réconfort et de soulagement aux personnes en difficulté pendant ce mois sacré de l'année.",
       // url: "https://timerse.com"
     }
   ];
@@ -100,7 +100,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Panier du Ramadan</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>

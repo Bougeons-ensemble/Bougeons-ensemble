@@ -80,18 +80,18 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "",
+        "Le CLUB BOUGEONS ENSEMBLE a mené une action humanitaire remarquable en distribuant des repas pour les gens sans abri pour qu'ils puissent rompre leurs jeun. dans le cadre du mois de Ramadan. Cette initiative visait à soulager les personnes en situation de précarité qui n'ont pas les moyens de se nourrir convenablement pendant cette période de jeun. Les membres du club ont travaillé avec dévouement pour préparer ces repas équilibrés et nutritifs, comprenant du lait, des dattes, du pain, des mini sandwichs , et d'autres produits pour les distribuer aux pauvres  à l'heure de la rupture du jeûne.",
       // url: "https://timerse.com"
     },
 
-    {
-      imageSrc:iftar2 ,
-          // subtitle: "Exclusive",
-      // title: "Lollapalooza, Manhattan",
-      description:
-        ".",
-      // url: "https://timerse.com"
-    }
+    // {
+    //   imageSrc:iftar2 ,
+    //       // subtitle: "Exclusive",
+    //   // title: "Lollapalooza, Manhattan",
+    //   description:
+    //     ".",
+    //   // url: "https://timerse.com"
+    // }
   ];
 
   return (
@@ -100,7 +100,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Iftar Saim</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>

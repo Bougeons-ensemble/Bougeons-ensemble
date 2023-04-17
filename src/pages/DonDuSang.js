@@ -80,7 +80,7 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "",
+        "Chaque jour au moins une dizaine de patients galèrent pour être transfusés. Et afin de répondre à la pénurie du sang à laquelle notre pays fait face , le club Bougeons Ensemble, en partenariat avec le centre régional de transfusion sanguine de Tanger, s'engage chaque année dans l'organisation des compagnes de don du sang au sein de la faculté de sciences et techniques de Tanger en facilitant le processus du don et permettant aux donateurs de laisser eux aussi un impact positif dans la vie des autres qui qu'une poche de sang peut leurs sauver la vie ",
       // url: "https://timerse.com"
     },
 
@@ -89,7 +89,7 @@ export default () => {
           // subtitle: "Exclusive",
       // title: "Lollapalooza, Manhattan",
       description:
-        ".",
+        "BOUGEONS ENSEMBLE vous donne rendez-vous chaque année en vous apportant l'opportunité de sauver la vie de vos frères et sœurs, d'aider à arracher une mère aux griffes de la mort et aussi de faire voir à un enfant l'aube d'un nouveau jour..",
       // url: "https://timerse.com"
     }
   ];
@@ -100,7 +100,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Caravane Aldifee</HeadingTitle>
+          <HeadingTitle>Don du sang</HeadingTitle>
           <HeadingDescription>
             
           </HeadingDescription>
