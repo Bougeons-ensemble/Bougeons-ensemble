@@ -15,7 +15,7 @@ import { ReactComponent as TiktokIcon } from "images/tiktok-icon.svg";
 const Container = tw.div`relative bg-gray-200 text-gray-700 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 
-const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
+const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between `;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-6 h-6 block`;
@@ -39,6 +39,13 @@ export default () => {
           <LogoContainer>
             <LogoImg alt="Bougeons ensemble logo" src={LogoImage} />
             <LogoText>Bougeons ensemble.</LogoText>
+          </LogoContainer>
+         
+       
+           
+          <LogoContainer>
+            <p>Bougeons ensemble pour aider les autres.</p>
+            
           </LogoContainer>
           {/* <CopywriterNotice>
             &copy;Pour contribuer à ce projet{" "}
