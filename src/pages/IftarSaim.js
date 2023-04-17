@@ -26,7 +26,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import iftar1 from "../images/activities_images/iftar2.jpg";
-import iftar2 from "../images/activities_images/iftar3.jpeg";
+// import iftar2 from "../images/activities_images/iftar3.jpeg";
 
 const Container = tw.div`relative`;
 
