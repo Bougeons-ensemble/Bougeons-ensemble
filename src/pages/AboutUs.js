@@ -29,6 +29,9 @@ import image4 from "../images/team_images/4.png";
 import image5 from "../images/team_images/5.png";
 import image6 from "../images/team_images/6.png";
 import image7 from "../images/team_images/7.png";
+import image8 from "../images/team_images/8.jpeg";
+import image9 from "../images/team_images/9.jpeg";
+
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 const cards = [
   {
@@ -37,7 +40,7 @@ const cards = [
     name: "Yasser Zahri",
     links: [
       {
-        url: "https://linkedin.com/in/YasserZahri",
+        url: "https://www.linkedin.com/in/zahri-yasser-b4846b256/",
         icon: LinkedinIcon,
       },
     ],
@@ -59,7 +62,7 @@ const cards = [
     name: "Sami Bouzerouata",
     links: [
       {
-        url: "https://linkedin.com/in/SamiBouzerouata",
+        url: "https://www.linkedin.com/in/sami-bouzerouata-2a5075269/",
         icon: LinkedinIcon,
       },
     ],
@@ -70,7 +73,7 @@ const cards = [
     name: "Mayssoun El Messoudi",
     links: [
       {
-        url: "https://linkedin.com/in/MayssounElMessoudi",
+        url: "https://www.linkedin.com/in/maysoun-el-messaoudi-089079273",
         icon: LinkedinIcon,
       },
     ],
@@ -81,7 +84,7 @@ const cards = [
     name: "Salma Aanzi",
     links: [
       {
-        url: "https://linkedin.com/in/Salma Aanzi",
+        url: "https://www.linkedin.com/in/salma-aanzi-152a66265/",
         icon: LinkedinIcon,
       },
     ],
@@ -92,7 +95,7 @@ const cards = [
     name: "Mohamed El Mrabet",
     links: [
       {
-        url: "https://linkedin.com/in/MohamedElMerabet",
+        url: "https://www.linkedin.com/in/mohamed-el-mrabet-231b74255/",
         icon: LinkedinIcon,
       },
     ],
@@ -104,6 +107,28 @@ const cards = [
     links: [
       {
         url: "https://linkedin.com/in/FatimaezzahraGannoune",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image8,
+    position: "Responsable communication",
+    name: "Ghizlane Hajji",
+    links: [
+      {
+        url: "https://www.linkedin.com/in/ghizlane-hajji-60096b218",
+        icon: LinkedinIcon,
+      },
+    ],
+  },
+  {
+    imageSrc: image9,
+    position: "Responsable de rédaction",
+    name: "Imene bellout",
+    links: [
+      {
+        url: "https://www.linkedin.com/in/imane-bellout-71a0b5255",
         icon: LinkedinIcon,
       },
     ],
