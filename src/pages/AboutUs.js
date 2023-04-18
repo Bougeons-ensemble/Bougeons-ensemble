@@ -29,8 +29,8 @@ import image4 from "../images/team_images/4.png";
 import image5 from "../images/team_images/5.png";
 import image6 from "../images/team_images/6.png";
 import image7 from "../images/team_images/7.png";
-import image8 from "../images/team_images/8.jpeg";
-import image9 from "../images/team_images/9.jpeg";
+import image8 from "../images/team_images/8.jpg";
+import image9 from "../images/team_images/9.jpg";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 const cards = [
@@ -51,7 +51,7 @@ const cards = [
     name: "Safae Afass",
     links: [
       {
-        url: "https://linkedin.com/in/SafaeAfassi",
+        url: "https://www.linkedin.com/in/safae-afassi-824505266",
         icon: LinkedinIcon,
       },
     ],
