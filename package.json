@@ -61,6 +61,6 @@
     ]
   },
   "devDependencies": {
-    "workbox-sw": "^6.5.4"
+    "workbox-sw": "^7.0.0"
   }
 }
