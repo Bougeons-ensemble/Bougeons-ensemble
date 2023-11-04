@@ -94,7 +94,7 @@ export default ({
       <NavLink to="/">Accueil </NavLink>
       <NavLink to="/aProposDeNous">À propos de nous</NavLink>
       <NavLink to="/activities">Les activités</NavLink>
-      <NavLink to="/contactNous">Contact nous</NavLink>
+      <NavLink to="/contactNous">Contactez-nous</NavLink>
     </NavLinks>,
   ];
   logoLink = logoLink || defaultLogoLink;

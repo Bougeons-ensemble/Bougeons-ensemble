@@ -46,7 +46,7 @@ const Textarea = styled(Input).attrs({ as: "textarea" })`
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8 `;
 
 export default ({
-  subheading = "Contact nous ",
+  subheading = "Contactez-nous",
   heading = (
     <>
       {" "}
