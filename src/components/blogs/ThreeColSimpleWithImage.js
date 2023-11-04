@@ -91,7 +91,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingInfoContainer>
-          <HeadingTitle>Nos activities</HeadingTitle>
+          <HeadingTitle>Nos activités</HeadingTitle>
           {/* <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription> */}
         </HeadingInfoContainer>
         <ThreeColumn>

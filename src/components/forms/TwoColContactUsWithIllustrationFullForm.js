@@ -50,8 +50,8 @@ export default ({
   heading = (
     <>
       {" "}
-      N'hésitez pas <span tw="text-primary-500">de contacter</span>
-      <wbr /> nous .
+      N'hésitez pas à <span tw="text-primary-500">nous</span>
+      <wbr /> contacter .
     </>
   ),
   description = "Si vous avez des questions, des commentaires ou des suggestions à propos du Club Bougeons Ensemble, n'hésitez pas à nous contacter. Nous sommes toujours heureux de recevoir des nouvelles de notre communauté et de discuter de toutes les idées que vous pourriez avoir.",
@@ -117,7 +117,7 @@ export default ({
                 placeholder="Nom et prénom"
                 required
               />
-              <Input type="text" name="subject" placeholder="Subjet" required />
+              <Input type="text" name="subject" placeholder="Sujet" required />
               <Textarea
                 name="message"
                 placeholder="Votre message ici"
