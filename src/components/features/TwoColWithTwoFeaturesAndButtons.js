@@ -37,16 +37,16 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
 const Feature = tw.div`mt-8 flex items-start flex-col md:flex-row`;
 
-const FeatureIconContainer = styled.div`
-  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0`}
-  svg {
-    ${tw`w-5 h-5 text-primary-500`}
-  }
-`;
+// const FeatureIconContainer = styled.div`
+//   ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0`}
+//   svg {
+//     ${tw`w-5 h-5 text-primary-500`}
+//   }
+// `;
 
-const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left`;
-const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
-const FeatureDescription = tw.div`mt-1 text-sm`;
+// const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left`;
+// const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
+// const FeatureDescription = tw.div`mt-1 text-sm`;
 
 // const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
@@ -94,7 +94,7 @@ export default ({
             <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>
-                  <FeatureIconContainer>
+                  {/* <FeatureIconContainer>
                     {<feature.Icon />}
                   </FeatureIconContainer>
                   <FeatureText>
@@ -102,7 +102,7 @@ export default ({
                     <FeatureDescription>
                       {feature.description}
                     </FeatureDescription>
-                  </FeatureText>
+                  </FeatureText> */}
                 </Feature>
               ))}
             </Features>
