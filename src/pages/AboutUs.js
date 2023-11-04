@@ -140,7 +140,7 @@ export default () => {
       <Header />
       <MainFeature1
         subheading={<Subheading>A propos de Bougeons ensemble</Subheading>}
-        heading="nous sommes non lucratif club "
+        heading="Nous sommes un club à but non lucratif. "
         buttonRounded={false}
         primaryButtonText="Plus de details "
         description="Bougeons Ensemble est un club humanitaire universitaire,
@@ -159,20 +159,7 @@ export default () => {
       <MainFeature1
         id="ourvision"
         subheading={<Subheading>Notre vision</Subheading>}
-        description="BOUGEONS ENSEMBLE en partenariat avec FONDATION
-        SOQYA organisent une action de FORAGE D'UN PUIT en
-        faveur des habitants De la région d'ALHAOUZ, ce coin reculé
-        et méconnu au Maroc où presque 80 familles souffrent pour
-        avoir l'accès à l'eau potable , les habitants sont obligés de se
-        déplacer des kilomètres en transportant des bouteilles
-        lourdes . C'est souvent les femmes et les enfants qui sont
-        confiés à réaliser cette tâche difficile notamment avec les
-        reliefs accidentés.
-        Et comme vous le savez, la meilleure façon de remercier Dieu
-        pour une bénédiction qu'il nous a donnée est d'en donner .
-        Afin de soulager les souffrances de ces habitants nous vous
-        invitons à contribuer dans cette noble action en donnant de
-        ce que vous pouvez.  "
+        description="Le club compte à contribuer de manière significative au bien-être des membres les plus vulnérables de notre société. Nous avons choisi des domaines clés sur lesquels nous nous concentrons pour atteindre cet objectif, comme tout d'abord forer des puits, nourrir les pauvres et mener des activités culturelles qui nous aideront à récupérer des fonds. Nous répartissons également nos contributions dans le domaine de la santé, en organisant des journées de don du sang pour sensibiliser les personnes de son importance. Nous sommes déterminés à faire une différence par le biais de notre travail caritatif et nous voulons être le catalyseur dont le monde a besoin pour s'améliorer.  "
         heading="Notre objectif est de perturber l'espace de conception."
         buttonRounded={false}
         primaryButtonText="Contact nous"
@@ -181,9 +168,9 @@ export default () => {
         textOnLeft={false}
       />
       <Features
-        subheading={<Subheading>Notre celules </Subheading>}
+        subheading={<Subheading>Nos cellules</Subheading>}
         heading="les cellules ."
-        description="Bougeons ensemble est un club compose de 4 cellules "
+        description="Bougeons ensemble est un club composé de 4 cellules. "
         iconFill="#f6303f"
         cards={[
           {
