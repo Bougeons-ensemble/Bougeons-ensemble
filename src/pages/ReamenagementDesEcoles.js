@@ -62,7 +62,7 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "l est nécessaire que l'environnement scolaire soit agréable pour que les élèves puissent étudier dans des conditions optimales. Le CLUB BOUGEONS ENSEMBLE  s'engage ainsi  à réaménager des écoles dans le cadre de l'un de ses projets annuels . L'objectif est de créer un espace de vie scolaire adapté et propice à l'apprentissage.Les activités menées dans le cadre de ce projet de réaménagement comprennent notamment la peinture, le jardinage, le dessin, et d'autres activités simples mais qui apportent de la joie aux élèves. L'objectif est d'embellir les espaces de vie scolaire, et de créer un environnement plus accueillant et plus engageant pour tous.",
+        "Il est nécessaire que l'environnement scolaire soit agréable pour que les élèves puissent étudier dans des conditions optimales. Le CLUB BOUGEONS ENSEMBLE  s'engage ainsi  à réaménager des écoles dans le cadre de l'un de ses projets annuels . L'objectif est de créer un espace de vie scolaire adapté et propice à l'apprentissage.Les activités menées dans le cadre de ce projet de réaménagement comprennent notamment la peinture, le jardinage, le dessin, et d'autres activités simples mais qui apportent de la joie aux élèves. L'objectif est d'embellir les espaces de vie scolaire, et de créer un environnement plus accueillant et plus engageant pour tous.",
       // url: "https://timerse.com"
     },
 

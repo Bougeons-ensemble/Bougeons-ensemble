@@ -117,7 +117,7 @@ export default ({
                 placeholder="Nom et prénom"
                 required
               />
-              <Input type="text" name="subject" placeholder="Sujet" required />
+              <Input type="text" name="sujet" placeholder="Sujet" required />
               <Textarea
                 name="message"
                 placeholder="Votre message ici"
