@@ -80,7 +80,7 @@ export default () => {
           // subtitle: "Free",
       // title: "Rock In Rio, Upstate",
       description:
-        "Il est nécessaire que l'environnement scolaire soit agréable pour que les élèves puissent étudier dans des conditions optimales. Le CLUB BOUGEONS ENSEMBLE  s'engage ainsi  à réaménager des écoles dans le cadre de l'un de ses projets annuels . L'objectif est de créer un espace de vie scolaire adapté et propice à l'apprentissage. Les activités menées dans le cadre de ce projet de réaménagement comprennent notamment la peinture, le jardinage, le dessin, et d'autres activités simples mais qui apportent de la joie aux élèves. L'objectif est d'embellir les espaces de vie scolaire, et de créer un environnement plus accueillant et plus engageant pour tous.",
+        "L'initiative Défi Khouk est une action louable qui vise à soutenir les sans-abris de Tanger en leur fournissant des vêtements chauds pour lutter contre les conditions climatiques rigoureuses de la région. Les membres de l'équipe ont travaillé avec ardeur pour collecter des vêtements auprès de donateurs, puis les trier et les distribuer aux personnes les plus nécessiteuses. Cette initiative est empreinte de solidarité et de compassion envers les personnes qui vivent dans des conditions précaires, souvent ignorées par la société.Grâce à l'engagement de ces bénévoles, les sans-abris ont pu recevoir des vêtements de qualité qui leur ont permis de se protéger du froid et de retrouver une dignité qu'ils méritent.",
       // url: "https://timerse.com"
     },
 
