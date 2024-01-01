@@ -7,7 +7,7 @@
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "@testing-library/user-event": "^14.5.1",
+    "@testing-library/user-event": "^14.5.2",
     "feather-icons": "^4.29.1",
     "framer-motion": "^10.16.16",
     "install": "^0.13.0",
