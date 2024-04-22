@@ -9,7 +9,7 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "feather-icons": "^4.29.1",
-    "framer-motion": "^11.0.5",
+    "framer-motion": "^11.1.7",
     "install": "^0.13.0",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
